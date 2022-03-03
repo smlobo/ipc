@@ -16,4 +16,6 @@ DEFINES = -D_SVID_SOURCE
 default: message-sender message-receiver
 
 clean:
-	rm -rf message-sender message-receiver
+	rm -f message-sender message-receiver
+	rm -rf *.dSYM
+

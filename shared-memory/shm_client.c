@@ -19,7 +19,7 @@ int main(int argc, char **argv) {
     key = atoi(argv[1]);
 
     // Locate the segment.
-    if ((shmid = shmget(key, 0, 0660)) == -1) {
+    if ((shmid = shmget(key, 0, 0600)) == -1) {
         perror("shmget failed");
         exit(-1);
     }

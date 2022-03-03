@@ -16,4 +16,6 @@ FLAGS = -std=c99
 default: socket-server socket-client
 
 clean:
-	rm -rf socket-server socket-client
+	rm -f socket-server socket-client
+	rm -rf *.dSYM
+

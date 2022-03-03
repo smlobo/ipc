@@ -16,4 +16,6 @@ DEFINES = -D_SVID_SOURCE
 default: shm_server shm_client
 
 clean:
-	rm -rf shm_server shm_client
+	rm -f shm_server shm_client
+	rm -rf *.dSYM
+
